@@ -1,0 +1,7 @@
+services:
+  vercel-api:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      UPSTREAM: "https://api.vercel.com"
+    restart: unless-stopped
